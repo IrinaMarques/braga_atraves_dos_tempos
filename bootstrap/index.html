@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Blasting Off With Bootstrap</title> <!--page title-->
+	<link href="css/bootstrap.css" rel="stylesheet"> <!-- Link para adicionar o bootstrap ao html -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+    <!--<div class='row'>
+	<div class='col-md-12'> - adicionar colunas para gerir espaço no site que foram retiradas-->
+	<div class="navbar navbar-default navbar-static-top"><!-- adicionamos uma navbar para este container se destinguir dos restantes da pagina passa a ser container navbar-->
+		<div class="container">
+			<div class="navbar-header">
+				<a href='/' class='navbar-brand'>Blasting Off With Bootstrap</a> <!--Substituir o h1 pela a e retirar o posicionamento das 12 colunas-->
+				<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'> <!-- atribuimos comportamento através do data-toggle e do data-target-->
+				<span class='sr-only'>Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button> <!-- Ao encolher o browser o menu de navegação transforma-se em 3 riscos para nos ecrãs xs continuar a ser possivel ver -->
+			</div>
+			<ul class='nav navbar-nav navbar-right collapse navbar-collapse'><!-- na lista criar um menu de navegação .nav e posicionamento á direita-->
+				<li><a href="tickets.html">Tickets</a></li>
+				<li><a href="stations.html">Station</a></li>
+				<li><a href="about.html" data-target='#' data-toggle='dropdown'>About<span class='caret'></span></a>
+					<ul class='dropdown-menu'>
+						<li><a href="story.html">Our Story</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li class='divider'></li> <!--divide os links -->
+						<li><a href="/blog">Blog</a></li>
+						<li class='divider'></li>
+						<li><a href="http://twitter.com/...">Twitter</a></li>
+						<li><a href="http://facebook.com/...">Facebook</a></li>	
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container"> <!-- Ao fazer isto ele automaticamente assume que não quermos o texto colado às margens do ecrã-->        
+        
+
+		
+		<div class='row well well-lg'><!-- row definir as colunas, well para definir o background e arredondamento-->
+			<div class="col-md-6"> <!-- faz com que juntamente o outro col-md-6 dividam o ecrã-->
+				<h2>The Fastest Way to Space</h2>
+					<p class='lead'>Make your way to sace in the comfort of your own rocket, elevator or transporter.</p> <!-- A class lead dá enfase -->
+				<button type="button" class='btn btn-lg btn-default'>Take the Tour</button>
+				<button type="button" class='btn btn-lg btn-primary'>Book Tickets Now</button>
+			</div>
+			<div class="col-md-6 hidden-sm hidden-xs"><!-- divide o ecrã com o de cima -->
+				<img src="images/img-header.jpg" alt="Blasting Off">
+			</div>
+		</div>
+	</div>
+	<div class='container'><!-- Esta class container-fluid faz com que o texto fique fluido, vá de novo até ás margens-->
+		<div class="row text-center">
+			<div class='row features'>
+			<div class='col-sm-4 col-xs-10 col-xs-offset-1 col-sm-offset-0'> <!-- colunas que funcionam num small device, e num extra small device, como entretanto deixam de funcionar num large device é necessário definir um valor col-sm-offset-0 para que voltem a dar-->	
+			<i class='glyphicon glyphicon-briefcase'></i> <!-- adiciona uma pequena imagem-->
+				<h3>Book Today!</h3><p>Even if you're traveling tomorrow, you can still get tickets today. We have a number of convenintly located ports around the globe to service everybody.</p>
+			</div>
+			<div class='col-sm-4'>
+			<i class='glyphicon glyphicon-random'></i>
+	    		<h3>Go Anywhere!</h3><p>If you need to get to space today, why not try out a transporter? Dispite the claims, there are have been no deaths in the last 6 weeks!</p>
+			</div>
+			<div class='col-sm-4'>
+			<i class='glyphicon glyphicon-send'></i>
+	    		<h3>RocketBus&reg;</h3><p>For cheapest fares, catch the next RocketBus to the stars. Cheaper on your wallet and easiest way to make friends.</p>
+    		</div>
+		</div>
+	</div>
+	</div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script> <!-- Adicionou o jquery-->
+    <script src='js/bootstrap.js'></script>
+</body>
+</html>

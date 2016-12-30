@@ -16,7 +16,7 @@ h1 {
 	font-size: 3.125em; /*50*/
 }
 
-li { 
+li.border { 
 	list-style-type:none;
 	display: inline-block;
 	padding-left: 0.5em; 
@@ -25,6 +25,10 @@ li {
 
 .border {
 	border-left: 0.063em solid;
+}
+
+.border:first-child {
+	border: none;
 }
 
 .navigationtab {
@@ -41,10 +45,20 @@ body {
 h2 {
 	display: inline-block;
 	text-align: center;
-	margin: 0;
-	background: red;
-	/*width: 7.500em*/
+	background: rgba(235, 235, 235, 0.7);
+	width: 100%; 
+	margin-top: 12.500em;
+	padding: 0.5em 0 0.5em;
+	color: black;
+	font-size: 2em; 
 }
+
+li.tab { 
+	list-style-type:none;
+	display: inline-block;
+	/*padding-left: 0.5em; 
+	padding-right: 0.5em;*/ 
+	}
 
 img {
 	display: inline-block;
@@ -54,7 +68,8 @@ img {
 .firstmenu {
 	text-align: center;
 	padding: 1.250em 0 1.250em;
-	height: 29.750em; /*476px*/ 
+	height: 35.750em; /*476px*/ 
+	/*position: relative;*/
 }
 
 .firstmenu ul {
@@ -63,9 +78,9 @@ img {
 
 .tab {
 	height: 100%; 
-	width: 18.0em;
+	width: 19.0em;
 	margin: 0;
-	background: orange;
+	/*background: orange;*/
 	background-image: url('../_img/hosp_s_marcos.jpg');
 	background-position: center;
 	/*background-size: cover;*/
@@ -85,6 +100,7 @@ img {
 	text-align: center;
 	height: 12.500em; /*200*/
 	background-color: blue;
+	/*position: absolute;*/
 }
 
 h3 {
@@ -125,4 +141,36 @@ aside {
 
 footer {
 	padding-top: 1.250em;
+}
+
+/*BOOTSTRAP*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../botstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 1.5em;
+  padding-top: 0.1em;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-globe:before {
+  content: "\e135";
+}
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+.glyphicon-book:before {
+  content: "\e043";
 }
