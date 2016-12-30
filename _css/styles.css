@@ -5,6 +5,12 @@ margin: 0;
 font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; 
 }
 
+li {
+	list-style-type:none;
+}
+
+/*HEADER*/
+
 header {
 	width: 60.000em;
 	margin: 0 auto;
@@ -17,7 +23,6 @@ h1 {
 }
 
 li.border { 
-	list-style-type:none;
 	display: inline-block;
 	padding-left: 0.5em; 
 	padding-right: 0.5em; 
@@ -36,6 +41,8 @@ li.border {
 	padding-top: 1.250em;	
 }
 
+/* END OF HEADER*/
+
 body {
 	width: 60.000em;
 	margin: 0 auto;
@@ -45,25 +52,17 @@ body {
 h2 {
 	display: inline-block;
 	text-align: center;
-	background: rgba(235, 235, 235, 0.7);
+	background: rgba(235, 235, 235, 0.8);
 	width: 100%; 
-	margin-top: 12.500em;
+	margin-top: 13.000em;
 	padding: 0.5em 0 0.5em;
 	color: black;
 	font-size: 2em; 
 }
 
 li.tab { 
-	list-style-type:none;
 	display: inline-block;
-	/*padding-left: 0.5em; 
-	padding-right: 0.5em;*/ 
 	}
-
-img {
-	display: inline-block;
-	margin: 0 auto;
-}
 
 .firstmenu {
 	text-align: center;
@@ -80,8 +79,8 @@ img {
 	height: 100%; 
 	width: 19.0em;
 	margin: 0;
-	/*background: orange;*/
 	background-image: url('../_img/hosp_s_marcos.jpg');
+	opacity: 0.9;
 	background-position: center;
 	/*background-size: cover;*/
 }
@@ -96,48 +95,45 @@ img {
 	background-position: right;
 }
 
-.secondmenu {
+/*MAPAS E CONTACTOS*/
+
+.secondmenu ul {
 	text-align: center;
-	height: 12.500em; /*200*/
-	background-color: blue;
-	/*position: absolute;*/
+	width: 100%;
+	display: inline-block;
 }
 
 h3 {
 	display: inline-block;
 	text-align: center;
-	margin: 0;
-	background: green;
+	font-size: 1.25em;
+	width: 100%;
+	color: black;
 }
 
 .secondtab {
 	text-align: center;
-	color: green;
-	padding: 2.250em;
-	margin-top: 2.250em;
-}
-
-.tab4 {
-	float: left;
-	width: 9.750em;
-	height: 2.250em;
+	color: black;
 	border-radius: 0.750em;
-	margin-left: 10.000em;
-	padding-bottom: 1.250em;
+	border: 3px solid;
+	display: inline-block;
+	width: 17em;
+	margin: 0 1em;
 }
 
-.tab5 {
-	float: right;
-	width: 9.750em;
-	height: 2.250em;
-	border-radius: 0.750em;
-	margin-right: 10.000em;
-	padding-bottom: 1.250em;
+/*ASIDE*/
+
+aside ul {
+	text-align: center;
 }
 
-aside {
-	padding-top: 1.250em;
-}
+.endtab { 
+	display: inline-block;
+	padding: 1.250em 1em 0 1em; 
+	
+	}
+
+/*FOOTER*/
 
 footer {
 	padding-top: 1.250em;
@@ -173,4 +169,10 @@ footer {
 }
 .glyphicon-book:before {
   content: "\e043";
+}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+.glyphicon-info-sign:before {
+  content: "\e086";
 }
