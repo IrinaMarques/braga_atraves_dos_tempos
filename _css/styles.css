@@ -1,144 +1,3 @@
-html, body, h1, h2, h3, p, ol, ul, li, a {
-padding: 0;
-border: 0;
-margin: 0;
-font-family: Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; 
-}
-
-li {
-	list-style-type:none;
-}
-
-/*HEADER*/
-
-header {
-	width: 60.000em;
-	margin: 0 auto;
-	padding: 3.125em 0 3.125em;
-}
-
-h1 {
-	text-align: center;
-	font-size: 3.125em; /*50*/
-}
-
-li.border { 
-	display: inline-block;
-	padding-left: 0.5em; 
-	padding-right: 0.5em; 
-	}
-
-.border {
-	border-left: 0.063em solid;
-}
-
-.border:first-child {
-	border: none;
-}
-
-.navigationtab {
-	text-align: right;
-	padding-top: 1.250em;	
-}
-
-/* END OF HEADER*/
-
-body {
-	width: 60.000em;
-	margin: 0 auto;
-	padding: 3.125em 0 3.125em;
-}
-
-h2 {
-	display: inline-block;
-	text-align: center;
-	background: rgba(235, 235, 235, 0.8);
-	width: 100%; 
-	margin-top: 13.000em;
-	padding: 0.5em 0 0.5em;
-	color: black;
-	font-size: 2em; 
-}
-
-li.tab { 
-	display: inline-block;
-	}
-
-.firstmenu {
-	text-align: center;
-	padding: 1.250em 0 1.250em;
-	height: 35.750em; /*476px*/ 
-	/*position: relative;*/
-}
-
-.firstmenu ul {
-	height: 100%;
-}
-
-.tab {
-	height: 100%; 
-	width: 19.0em;
-	margin: 0;
-	background-image: url('../_img/hosp_s_marcos.jpg');
-	opacity: 0.9;
-	background-position: center;
-	/*background-size: cover;*/
-}
-
-.tab:first-child {
-	float:left;
-	background-position: left;
-}
-
-.tab:last-child {
-	float:right;
-	background-position: right;
-}
-
-/*MAPAS E CONTACTOS*/
-
-.secondmenu ul {
-	text-align: center;
-	width: 100%;
-	display: inline-block;
-}
-
-h3 {
-	display: inline-block;
-	text-align: center;
-	font-size: 1.25em;
-	width: 100%;
-	color: black;
-}
-
-.secondtab {
-	text-align: center;
-	color: black;
-	border-radius: 0.750em;
-	border: 3px solid;
-	display: inline-block;
-	width: 17em;
-	margin: 0 1em;
-}
-
-/*ASIDE*/
-
-aside ul {
-	text-align: center;
-}
-
-.endtab { 
-	display: inline-block;
-	padding: 1.250em 1em 0 1em; 
-	
-	}
-
-/*FOOTER*/
-
-footer {
-	padding-top: 1.250em;
-}
-
 /*BOOTSTRAP*/
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -175,4 +34,118 @@ footer {
 }
 .glyphicon-info-sign:before {
   content: "\e086";
+}
+
+/*PAGE STYLES*/
+
+html, body, h1, h2, h3, h4, p, ol, ul, li, a {
+padding: 0;
+border: 0;
+margin: 0;
+font-family: Helvetica,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif; 
+}
+
+li {
+	list-style-type:none;
+}
+
+/*HEADER*/
+
+header {
+	width: 60.000em;
+	margin: 0 auto;
+	padding: 3.125em 0 3.125em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3.125em; /*50*/
+}
+
+li.border { 
+	display: inline-block;
+	padding: 0 0.5em;  
+	}
+
+.border:not(:first-child) {
+	border-left: 0.063em solid;
+}
+
+.navigationtab {
+	text-align: right;
+	padding-top: 1.250em;	
+}
+
+/* END OF HEADER*/
+
+body {
+	width: 60.000em;
+	margin: 0 auto;
+	padding: 3.125em 0 3.125em;
+}
+
+.nav2 {
+	display: inline-block;
+	text-align: center;
+	background: rgba(235, 235, 235, 0.8);
+	width: 100%; 
+	margin-top: 13.000em;
+	padding: 0.5em 0 0.5em;
+	color: black;
+	font-size: 2em; /*32px*/
+}
+
+li.tab { 
+	display: inline-block;
+	}
+
+.firstmenu {
+	text-align: center;
+	padding: 1.250em 0 1.250em;
+	height: 35.750em; /*476px*/ 
+}
+
+.firstmenu ul {
+	height: 100%;
+}
+
+.tab {
+	height: 100%; 
+	width: 19.0em;
+	margin: 0;
+	background-image: url('../_img/hosp_s_marcos.jpg');
+	opacity: 0.9;
+	background-position: center;
+}
+
+.tab:first-child {
+	float:left;
+	background-position: left;
+}
+
+.tab:last-child {
+	float:right;
+	background-position: right;
+}
+
+/*ASIDE*/
+
+aside ul {
+	text-align: center;
+	margin: 1.5em 0;
+}
+
+.endtab li {
+	display: inline-block;
+	padding: 0 4.5em;  
+}
+
+.endtab li:not(:first-child) { /*every except this one :not(:first-child);*/
+	border-left: 0.063em solid;
+}
+
+/*FOOTER*/
+
+footer {
+	padding-top: 1.250em;
 }
