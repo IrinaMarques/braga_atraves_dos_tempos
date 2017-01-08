@@ -1,10 +1,14 @@
+/*MEDIA QUERIES*/
+/*@media only screen and(max-width:480px){}*/
+/*styles*/
+
 /*BOOTSTRAP*/
 @font-face {
   font-family: 'Glyphicons Halflings';
-
-  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../botstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../vendors/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../vendors/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../vendors/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../vendors/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../vendors/botstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../vendors/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -36,6 +40,31 @@
   content: "\e086";
 }
 
+/*FONT AWESOME*/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../vendors/font_awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../vendors/font_awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../vendors/font_awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../vendors/font_awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../vendors/font_awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../vendors/font_awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter-square:before {
+  content: "\f081";
+}
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
 /*PAGE STYLES*/
 
 html, body, h1, h2, h3, h4, p, ol, ul, li, a {
@@ -47,6 +76,19 @@ font-family: Helvetica,"Palatino Linotype","Palatino LT STD","Book Antiqua",Geor
 
 li {
 	list-style-type:none;
+}
+
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+ 
+a:hover, a:active {
+	color: red;
 }
 
 /*HEADER*/
@@ -132,7 +174,7 @@ li.tab {
 
 aside ul {
 	text-align: center;
-	margin: 1.5em 0;
+	margin: 3.5em 0;
 }
 
 .endtab li {
@@ -147,5 +189,62 @@ aside ul {
 /*FOOTER*/
 
 footer {
-	padding-top: 1.250em;
+	padding: 1.250em 1em 0.5em;
+	height: auto;
+	background: rgba(229,231,232,0.7);
+	border-top: 0.063em solid;
+	border-bottom-left-radius: 1em; 
+	border-bottom-right-radius: 1em; 
 }
+
+.lasttab {
+	text-align: center;
+	display: table; /*o prarent tem que ser table e o child table-cell*/
+    table-layout: fixed;
+    width: 100%;
+}
+
+.lasttab li {
+	display: table-cell; 
+	text-align: justify;
+	padding: 0em 1em;
+}
+
+.lasttab li:first-child {
+	width: 55%;
+}
+
+.lasttab li:last-child {
+	width: 20%;
+	text-align: center;
+}
+
+.lasttab img {
+	max-width: 5.7em;
+	max-height: auto;
+	float: left;
+	padding-right: 1em;
+}
+
+.sign_button {
+	border: 0.2em solid;
+	text-align: center;
+	border-radius: 0.5em;
+	margin-top: 0.3em;
+    padding: 0.4em;
+    background-color: #add6ff;
+
+}
+.sign_button a:hover {
+	color: white;
+}
+
+.lasttab p {
+	font-size: 0.9em;
+	padding-top: 0.3em;
+}
+
+.fa { 
+	font-size: 2em;
+	padding: 0.1em 0.5em 0; 
+ }
