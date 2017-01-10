@@ -94,9 +94,9 @@ a:hover, a:active {
 /*HEADER*/
 
 header {
-	width: 60.000em;
+	width: 60em; /*960px*/
 	margin: 0 auto;
-	padding: 3.125em 0 3.125em;
+	padding: 3.125em 0 3.125em; /*50px*/
 }
 
 h1 {
@@ -106,24 +106,24 @@ h1 {
 
 li.border { 
 	display: inline-block;
-	padding: 0 0.5em;  
+	padding: 0 0.5em;  /*8px*/
 	}
 
 .border:not(:first-child) {
-	border-left: 0.063em solid;
+	border-left: 0.063em solid; /*1.008px*/
 }
 
 .navigationtab {
 	text-align: right;
-	padding-top: 1.250em;	
+	padding-top: 1.250em; /*20px*/
 }
 
 /* END OF HEADER*/
 
 body {
-	width: 60.000em;
+	width: 60em; /*960*/
 	margin: 0 auto;
-	padding: 3.125em 0 3.125em;
+	padding: 3.125em 0 3.125em;  /*50px*/
 }
 
 .nav2 {
@@ -131,8 +131,8 @@ body {
 	text-align: center;
 	background: rgba(235, 235, 235, 0.8);
 	width: 100%; 
-	margin-top: 13.000em;
-	padding: 0.5em 0 0.5em;
+	margin-top: 13em; /*208*/
+	padding: 0.5em 0 0.5em; /*8px*/
 	color: black;
 	font-size: 2em; /*32px*/
 }
@@ -143,7 +143,7 @@ li.tab {
 
 .firstmenu {
 	text-align: center;
-	padding: 1.250em 0 1.250em;
+	padding: 1.250em 0 1.250em; /*20px*/
 	height: 35.750em; /*476px*/ 
 }
 
@@ -153,8 +153,8 @@ li.tab {
 
 .tab {
 	height: 100%; 
-	width: 19.0em;
-	margin: 0;
+	width: 19em; /*304px*/
+	/*margin: 0;*/
 	background-image: url('../_img/hosp_s_marcos.jpg');
 	opacity: 0.9;
 	background-position: center;
@@ -174,32 +174,32 @@ li.tab {
 
 aside ul {
 	text-align: center;
-	margin: 3.5em 0;
+	margin: 3.5em 0; /*56px*/
 }
 
 .endtab li {
 	display: inline-block;
-	padding: 0 4.5em;  
+	padding: 0 4.5em;  /*72px*/
 }
 
 .endtab li:not(:first-child) { /*every except this one :not(:first-child);*/
-	border-left: 0.063em solid;
+	border-left: 0.063em solid; /*1.008px*/
 }
 
 /*FOOTER*/
 
 footer {
-	padding: 1.250em 1em 0.5em;
+	padding: 1.250em 1em 0.5em; /*20px 16px 8px*/
 	height: auto;
 	background: rgba(229,231,232,0.7);
-	border-top: 0.063em solid;
+	border-top: 0.063em solid; /*1.008px*/
 	border-bottom-left-radius: 1em; 
 	border-bottom-right-radius: 1em; 
 }
 
 .lasttab {
 	text-align: center;
-	display: table; /*o prarent tem que ser table e o child table-cell*/
+	display: table; /*o parent tem que ser table e o child table-cell*/
     table-layout: fixed;
     width: 100%;
 }
@@ -220,18 +220,18 @@ footer {
 }
 
 .lasttab img {
-	max-width: 5.7em;
+	max-width: 5.7em; /*91.2px*/
 	max-height: auto;
 	float: left;
 	padding-right: 1em;
 }
 
 .sign_button {
-	border: 0.2em solid;
+	border: 0.2em solid; /*3.2*/
 	text-align: center;
-	border-radius: 0.5em;
-	margin-top: 0.3em;
-    padding: 0.4em;
+	border-radius: 0.5em; /*8px*/
+	margin-top: 0.3em; /*4.8px*/
+    padding: 0.4em; /*6.4px*/
     background-color: #add6ff;
 
 }
@@ -240,11 +240,11 @@ footer {
 }
 
 .lasttab p {
-	font-size: 0.9em;
-	padding-top: 0.3em;
+	font-size: 0.9em; /*14.4px*/
+	padding-top: 0.3em; /*4.8px*/
 }
 
 .fa { 
-	font-size: 2em;
-	padding: 0.1em 0.5em 0; 
+	font-size: 2em; /*32px*/
+	padding: 0.1em 0.5em 0; /*1.6px 8px*/
  }
